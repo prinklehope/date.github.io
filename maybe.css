@@ -35,6 +35,7 @@ body {
 
 #ilytButton {
   right: 80%;
+  width: 180px !important;
   background-color: #4682b4;
 }
 

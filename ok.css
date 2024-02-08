@@ -28,6 +28,7 @@ body {
     bottom: 10%;
     border-left: 90%;
     margin-bottom: 0;
+    width: 170px !important;
     background-color: #8B0000; /* Darker red button background color */
 }
 
