@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  overflow: hidden;
+  background-color: rgba(70, 130, 180, 0.2); /* Light blue background color */
+  transition: background-color 0.5s ease; /* Added background color transition */
+  font-family: "Arial";
+}
+
+@keyframes backgroundAnimation {
+  0% {
+      background-color: rgba(70, 130, 180, 0.4); /* Light blue background color */
+  }
+  50% {
+      background-color: rgba(70, 130, 180, 0.6); /* Midway color */
+  }
+  100% {
+      background-color: rgba(70, 130, 180, 0.4); /* Final color, back to the initial */
+  }
+}
+
+body {
+  animation: backgroundAnimation 3s infinite;
+}
+
+#ilytButton,
+#okayButton {
+  position: absolute;
+  bottom: 10%;
+  padding: 15px 32px; /* Adjust padding as needed */
+  transition: background-color 0.3s ease; /* Added button color transition */
+}
+
+#ilytButton {
+  right: 80%;
+  background-color: #4682b4;
+}
+
+#okayButton {
+  left: 70%;
+  background-color: #4682b4; /* Light blue button background color */
+}
+
+.header_text {
+  font-size: 40px;
+  font-weight: inherit;
+  color: #000080; /* Navy blue text color */
+  text-align: center;
+  margin-top: 108px;
+  margin-bottom: 10;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  margin: 8px 4px;
+  border-radius: 12px;
+  padding: 32px 32px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff; /* White text color */
+  background-color: #000080; /* Navy blue button background color */
+  transition: background-color 0.3s ease; /* Added button color transition */
+  white-space: nowrap;
+  width: 100px;
+}
+
+.gif-container {
+  position: absolute;
+  top: 60%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}

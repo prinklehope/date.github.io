@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    overflow: hidden;
+    background-color: rgba(255, 218, 185, 0.6); /* Peach background color */
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-color: rgba(255, 192, 203, 0.6); /* Pink background color */
+    }
+    50% {
+        background-color: rgba(255, 182, 193, 0.8); /* Lighter pink color */
+    }
+    100% {
+        background-color: rgba(255, 192, 203, 0.6); /* Final color, back to the initial */
+    }
+}
+
+body {
+    animation: backgroundAnimation 3s infinite;
+}
+
+#boloButton {
+    position: absolute;
+    bottom: 10%;
+    border-right: 90%;
+    margin-bottom: 30px; /* Added 'px' to specify margin */
+    background-color: #FF69B4; /* Hot pink button background color */
+}
+
+.header_text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: inherit;
+    color: #FF69B4; /* Hot pink text color */
+    text-align: center;
+    margin-top: 108px;
+    margin-bottom: 10px; /* Added 'px' to specify margin */
+}
+
+.btn {
+    margin: 4px 2px;
+    border-radius: 12px;
+    padding: 15px 32px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff; /* White text color */
+    background-color: #FF1493; /* Deep pink button background color */
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    width: 100px;
+}
+
+@media only screen and (max-width: 320px) and (max-height: 568px) {
+    .header_text {
+        font-size: 30px;
+    }
+
+    .btn {
+        padding: 10px 18px;
+        font-size: 15px;
+    }
+
+    body {
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 414px) and (max-height: 736px) {
+    .header_text {
+        font-size: 128px;
+    }
+
+    .btn {
+        padding: 15px 25px;
+        font-size: 14px;
+    }
+
+    body {
+        height: 90vh;
+    }
+}

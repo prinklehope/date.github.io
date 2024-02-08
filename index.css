@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    overflow: hidden;
+    background-color: rgba(160, 32, 240, 0.2); /* Lighter purple background color */
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-color: rgba(160, 32, 240, 0.4); /* Lighter purple background color */
+    }
+    50% {
+        background-color: rgba(160, 32, 240, 0.6); /* Midway color */
+    }
+    100% {
+        background-color: rgba(160, 32, 240, 0.4); /* Final color, back to the initial */
+    }
+}
+
+body {
+    animation: backgroundAnimation 3s infinite;
+}
+
+#hiiButton {
+    position: absolute;
+    bottom: 10%;
+    left: 50%; /* Center the button */
+    transform: translateX(-50%); /* Center the button horizontally */
+    background-color: #a020f0; /* Lighter purple button background color */
+}
+
+.header_text {
+    font-family: 'Pacifico';
+    font-size: 40px;
+    font-weight: inherit;
+    color: #800080; /* Purple text color */
+    text-align: center;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.header_text:nth-child(2) {
+    margin-top: 5px; /* Adjust the margin for the second row */
+}
+
+.gif-container {
+    position: absolute;
+    top: 35%; /* Adjust the positioning of the GIF */
+    width: 50%; /* Set width to 50% for each sticker */
+}
+
+.left-sticker {
+    left: 0;
+}
+
+.right-sticker {
+    right: 0;
+}
+
+.gif-container img {
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin: 4px 2px;
+    border-radius: 12px;
+    padding: 15px 32px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff; /* White text color */
+    background-color: #4b0082; /* Dark purple button background color */
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    width: 100px;
+}

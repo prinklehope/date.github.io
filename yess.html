@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="yess.css" />
+</head>
+
+<body>
+    <div class="container"></div>
+    <div>
+        <h1 class="header_text">So... I know I can be too much sometimes....</h1>
+    </div>
+    <div class="gif_container">
+        <img src="https://media.tenor.com/FPzGMNfFGnYAAAAi/cute-cat.gif" alt="cute animated gif" />
+    </div>
+    <div class="buttons">
+        <button class="btn" id="maybeButton" onclick="nextPage()">Maybe</button>
+        <button class="btn" id="yesButton" onmouseover="moveButton('yesButton')" onclick="moveButton('yesButton')">Yes</button>
+        <button class="btn" id="noButton" onmouseover="moveButton('noButton')" onclick="moveButton('noButton')">No</button>
+
+        <script>
+            function nextPage() {
+                window.location.href = "maybe.html";
+            }
+
+            function moveButton(buttonId) {
+                var button = document.getElementById(buttonId);
+                var x = Math.random() * (window.innerWidth - button.offsetWidth);
+                var y = Math.random() * (window.innerHeight - button.offsetHeight);
+                button.style.left = `${x}px`;
+                button.style.right = `${y}px`;
+            }
+        </script>
+    </div>
+</body>
+
+</html>
